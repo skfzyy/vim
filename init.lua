@@ -1,0 +1,10 @@
+require('shk.core.options')
+require('shk.core.keymaps')
+require('shk.plugin-setup')
+require('shk.plugins.nvimtree')
+require('shk.core.colorschem')
+require('shk.plugins.telescope')
+require('shk.plugins.mason')
+require('shk.plugins.lsp.lspconfig')
+require('shk.plugins.toggleterm')
+
