@@ -1,10 +1,15 @@
+-- base 
 require('shk.core.options')
 require('shk.core.keymaps')
-require('shk.plugin-setup')
-require('shk.plugins.nvimtree')
+require('shk.plugins_setup')
 require('shk.core.colorschem')
-require('shk.plugins.telescope')
-require('shk.plugins.mason')
-require('shk.plugins.lsp.lspconfig')
-require('shk.plugins.toggleterm')
 
+-- plguin
+require('shk.plugins.nvimtree')
+require('shk.plugins.telescope')
+require('shk.plugins.indentLine')
+require('shk.plugins.airline')
+require('shk.plugins.tagbar')
+require('shk.plugins.vimEnhancedHi')
+require('shk.plugins.cocnvim')
+require('shk.Plugins.nvimdap')

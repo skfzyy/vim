@@ -1,0 +1,6 @@
+{
+    "languageserver": {
+    },
+    "clangd.compilationDatabasePath":"${workspaceFolder}",
+    "clangd.compilationDatabaseCandidates":["${workspaceFolder}"]
+}

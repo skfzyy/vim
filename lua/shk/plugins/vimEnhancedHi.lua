@@ -1,0 +1,8 @@
+vim.g.cpp_class_scope_highlight=true
+vim.g.cpp_member_variable_highlight=true
+vim.g.cpp_class_decl_highlight=true
+vim.g.cpp_posix_standard=true
+vim.g.cpp_experimental_simple_template_highlight=true
+vim.g.cpp_experimental_template_highlight=true
+
+vim.g.cpp_concepts_highlight=true

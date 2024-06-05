@@ -20,20 +20,23 @@ vim.cmd([[
 
 
 return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-  use {
+
+use 'wbthomason/packer.nvim'
+use {
   'nvim-tree/nvim-tree.lua',
   requires = {
     'nvim-tree/nvim-web-devicons', -- optional
     },
   }
-  use {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = function()
-        require("nvim-autopairs").setup {}
-    end
-}
+--   use {
+--     "windwp/nvim-autopairs",
+--     event = "InsertEnter",
+--     config = function()
+--         require("nvim-autopairs").setup {}
+--     end
+-- }
+
+
 use 'folke/tokyonight.nvim'
 use {
   'nvim-telescope/telescope.nvim', tag = '0.1.6',
@@ -56,32 +59,21 @@ use {
         require('Comment').setup()
     end
 }
-use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
-}
-use ({
-    'nvimdev/lspsaga.nvim',
-    after = 'nvim-lspconfig',
-    config = function()
-        require('lspsaga').setup({})
-    end,
-})
 use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   require("toggleterm").setup()
 end}
 
-use("hrsh7th/nvim-cmp") -- completion plugin
-use("hrsh7th/cmp-buffer") -- source for text in buffer
-use("hrsh7th/cmp-path") -- source for file system paths
+use 'Yggdroot/indentLine'
 
-use("nvim-lualine/lualine.nvim")
-use("hrsh7th/cmp-nvim-lsp")
+use 'vim-airline/vim-airline'
+use 'vim-airline/vim-airline-themes'
+use 'preservim/tagbar'
+use 'octol/vim-cpp-enhanced-highlight'
 
+use {'neoclide/coc.nvim', branch = 'release'}
 
- use("jose-elias-alvarez/null-ls.nvim")
- use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+use 'mfussenegger/nvim-dap'
+use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

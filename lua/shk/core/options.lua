@@ -12,4 +12,3 @@ opt.autoindent=true
 
 opt.splitright=true
 opt.clipboard:append("unnamedplus")
-
